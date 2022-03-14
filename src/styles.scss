@@ -8,6 +8,7 @@ body,
 header,
 #intro-section {
     height: 100vh !important;
+    background-color: #aca6ce;
 }
 
 @media (max-width: 740px) {
@@ -20,12 +21,12 @@ header,
 }
 
 .top-nav-collapse {
-    background-color: #563e91 !important;
+    background-color: #0c231e!important;
 }
 
 @media (max-width: 991px) {
     .navbar:not(.top-nav-collapse) {
-        background: #563e91 !important;
+        background: #0c231e !important;
     }
 }
 
