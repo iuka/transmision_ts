@@ -1,14 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
-
+body {
+    font-family: "Montserrat"!important;
+  }
+  
 /* Required for full background image */
+body{
+        /* fallback for old browsers */
+        background: #667eea;
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgb(102, 127, 234), #921C80);
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgb(182, 110, 204), #29255C)
+}
 
 html,
 body,
 header,
 #intro-section {
     height: 100vh !important;
-    background-color: #aca6ce;
+    //background-color: #aca6ce;
 }
 
 @media (max-width: 740px) {
@@ -45,7 +58,6 @@ header,
     background-color: #0C231E !important;
     border-color: transparent !important;
 }
-
 
 /* FOOTER*/
 
