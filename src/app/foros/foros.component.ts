@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-foros',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./foros.component.scss']
 })
 export class ForosComponent implements OnInit {
+  id:number = 1;
 
-  constructor() { }
+  constructor( private router: Router ) { 
+    if(this.router.url == "/foro/2"){
+      this.id = 2;
+    }
+  }
 
   ngOnInit(): void {
+  }
+
+  horario(id){
+    this.id = id;
   }
 
 }

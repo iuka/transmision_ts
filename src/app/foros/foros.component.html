@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!--<app-header></app-header>
 <div class="container px-sm-0 mt-2" >
     <div class="wow fadeIn">
         <img src="../../assets/img/logo_braille.svg" class="img-fluid" alt="">
@@ -22,4 +22,166 @@
 
 <router-outlet class="col-md-12 px-md-3 "></router-outlet>
 
-<app-footer></app-footer>
+<app-footer></app-footer>-->
+
+<app-header></app-header>
+    <!-- Full Page Intro -->
+    <div  class="view">
+        <div class="row">
+            <div class="col-md-3  text-center">
+                <div class="col-md-12 col-sm-6 offset-sm-3 offset-md-0 offset-3 col-6">
+                    <img src="../../assets/img/LOGO.png" class="img-fluid " >
+                </div>
+                <div class="d-none d-sm-none d-lg-block d-xl-block d-md-block" >
+                    <div class="font-weight-bold  text-center  p-1 text-white">
+                        <h4 class="font-weight-bold ">Lunes 28 de marzo</h4>
+                    </div>
+                    <hr>
+                    <!--Foro 1-->
+                    <div *ngIf="id == 1">
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>9:00 hrs. - 9:20 hrs.</p>
+                        </div>
+                        <div class="text-center p-1 text-white">
+                            <p>Protocolo bienvenida y avisos generales</p>
+                        </div>
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>9:20 hrs. - 10:00 hrs.</p>
+                        </div>
+                        <div class="text-center p-1 text-white">
+                            <p>Inauguración</p>
+                        </div>
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>10:20 hrs. - 11:10 hrs.</p>
+                        </div>
+                        <div class="text-center  p-1 text-white">
+                            <p><strong>Conferencia magistral 1.</strong> Conaliteg</p>
+                        </div>
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>11:10 hrs. - 12:10 hrs.</p>
+                        </div>
+                        <div class="text-center  p-1 text-white">
+                            <p><strong>Mesa 1. </strong>Formación y retos ante la discapacidad visual</p>
+                        </div>
+                    </div>
+                    <!--END Foro 1-->
+                    <!--Foro 2-->
+                    <div *ngIf="id == 2">
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>11:10 hrs. - 12:10 hrs.</p>
+                        </div>
+                        <div class="text-center p-1 text-white">
+                            <p><strong>Mesa 2. </strong>Estrategias enfocadas a los alumnos con discapacidad visual</p>
+                        </div>
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>12:10 hrs. - 13:10 hrs.</p>
+                        </div>
+                        <div class="text-center p-1 text-white">
+                            <p><strong>Mesa 3. </strong>Aspectos sobre los materiales para alumnos con discapacidad visual 1</p>
+                        </div>
+                        <div class="font-weight-bold  text-center  p-1 text-default">
+                            <p>13:15 hrs. - 14:00 hrs.</p>
+                        </div>
+                        <div class="text-center  p-1 text-white">
+                            <p><strong>Conferencia magistral 2. </strong>Máximo Dómínguez (Biblioteca Nacional de México)</p>
+                        </div>
+                    </div>
+                    <!--END Foro 2-->
+                    
+                </div>
+            </div>
+            <div class="col-md-9 color-font">
+                <!-- Content -->
+                <div class=" px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn mt-3">
+                            <div class="container px-md-3 px-sm-0 mt-2" >
+                                <div class="row wow fadeIn">
+                                    <div class="col-md-12 wow fadeIn card" style="z-index: 1;" style="background-color: rgba(218, 184, 238, 0.37)!important;">
+                                        <div class="row p-3">
+                                            <div class="col-md-6 p-1">
+                                                <button mdbBtn type="button" class="btn btn-secondary"  [routerLink]="['1']" size="sm" block="true" routerLinkActive="active"  mdbWavesEffect (click)="horario(1)">Foro 1</button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button mdbBtn type="button" class="btn btn-secondary"  [routerLink]="['2']" size="sm" block="true" routerLinkActive="active"  mdbWavesEffect (click)="horario(2)">Foro 2</button>    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <router-outlet class="col-md-12 px-md-3"></router-outlet>
+                            <div class="d-block d-sm-block d-lg-none d-xl-none d-md-none" >
+                                <div class="font-weight-bold  text-center  p-1 text-white">
+                                    <h4 class="font-weight-bold ">Lunes 28 de marzo</h4>
+                                </div>
+                                <hr>
+                                <!--Foro 1-->
+                                <div *ngIf="id == 1">
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>9:00 hrs. - 9:20 hrs.</p>
+                                    </div>
+                                    <div class="text-center p-1 text-white">
+                                        <p>Protocolo bienvenida y avisos generales</p>
+                                    </div>
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>9:20 hrs. - 10:00 hrs.</p>
+                                    </div>
+                                    <div class="text-center p-1 text-white">
+                                        <p>Inauguración</p>
+                                    </div>
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>10:20 hrs. - 11:10 hrs.</p>
+                                    </div>
+                                    <div class="text-center  p-1 text-white">
+                                        <p><strong>Conferencia magistral 1.</strong> Conaliteg</p>
+                                    </div>
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>11:10 hrs. - 12:10 hrs.</p>
+                                    </div>
+                                    <div class="text-center  p-1 text-white">
+                                        <p><strong>Mesa 1. </strong>Formación y retos ante la discapacidad visual</p>
+                                    </div>
+                                </div>
+                                <!--END Foro 1-->
+                                <!--Foro 2-->
+                                <div *ngIf="id == 2">
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>11:10 hrs. - 12:10 hrs.</p>
+                                    </div>
+                                    <div class="text-center p-1 text-white">
+                                        <p><strong>Mesa 2. </strong>Estrategias enfocadas a los alumnos con discapacidad visual</p>
+                                    </div>
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>12:10 hrs. - 13:10 hrs.</p>
+                                    </div>
+                                    <div class="text-center p-1 text-white">
+                                        <p><strong>Mesa 3. </strong>Aspectos sobre los materiales para alumnos con discapacidad visual 1</p>
+                                    </div>
+                                    <div class="font-weight-bold  text-center  p-1 text-default">
+                                        <p>13:15 hrs. - 14:00 hrs.</p>
+                                    </div>
+                                    <div class="text-center  p-1 text-white">
+                                        <p><strong>Conferencia magistral 2. </strong>Máximo Dómínguez (Biblioteca Nacional de México)</p>
+                                    </div>
+                                </div>
+                                <!--END Foro 2-->
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+        </div>
+    </div>
+    <!-- Full Page Intro -->
+    <app-footer></app-footer>
+
+
+
+       
+
+           
