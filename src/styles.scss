@@ -7,24 +7,35 @@ body {
 /* Required for full background image */
 body{
         /* fallback for old browsers */
-        background: #667eea;
+        background: #543472;
       
         /* Chrome 10-25, Safari 5.1-6 */
-        background: -webkit-linear-gradient(to right, rgb(102, 127, 234), #921C80);
+        background: -webkit-linear-gradient(to right, #833780, #283165);
       
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background: linear-gradient(to right, rgb(182, 110, 204), #29255C)
+        background: linear-gradient(to right, #833780, #283165)
 }
 
 .color-font{
      /* fallback for old browsers */
-     background: #667eea;
+     background: #543472;
       
      /* Chrome 10-25, Safari 5.1-6 */
-     background: -webkit-linear-gradient(to right, rgb(102, 127, 234), #921C80);
+     background: -webkit-linear-gradient(to bottom, #833780, #283165);
    
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     background: linear-gradient(to right, rgb(182, 110, 204), #29255C)
+     background: linear-gradient(to bottom,#833780, #283165)
+}
+
+.color-font-vertical{
+    /* fallback for old browsers */
+    background: #543472;
+     
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, #833780, #283165);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top,#833780, #283165)
 }
 
 html,
