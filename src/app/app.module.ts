@@ -22,6 +22,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { Foro1Component } from './foros/foro1/foro1.component';
 import { Foro2Component } from './foros/foro2/foro2.component';
 import { ForosComponent } from './foros/foros.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ForosComponent } from './foros/foros.component';
     FooterComponent,
     Foro1Component,
     Foro2Component,
-    ForosComponent
+    ForosComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
