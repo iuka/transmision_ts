@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+    font-family: "Montserrat"!important;
+  }
 
 /* Required for full background image */
 
@@ -20,19 +23,19 @@ header,
 }
 
 .top-nav-collapse {
-    background-color: #563e91 !important;
+    background-color: #363764 !important;
 }
 
 @media (max-width: 991px) {
     .navbar:not(.top-nav-collapse) {
-        background: #563e91 !important;
+        background: #363764 !important;
     }
 }
 
 .rgba-gradient {
-    background: -moz-linear-gradient(44deg, #88a8d473, rgba(13, 17, 198, 0.69) 100%);
-    background: -webkit-linear-gradient(44deg, #88a8d473, rgba(13, 17, 198, 0.69) 100%);
-    background: linear-gradient(44deg, #88a8d473, rgba(13, 17, 198, 0.69) 100%);
+    background: -moz-linear-gradient(44deg, #2f2d59, #27275ad6 100%);
+    background: -webkit-linear-gradient(44deg,#727dac, #2f2d59 100%);
+    background: linear-gradient(44deg, #5c6693, #353561d6  100%);
 }
 
 .view.mask {
